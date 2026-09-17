@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cybertech Ainet | Internet Fiber Optic</title>
+
+    <meta name="description"
+          content="Cybertech Ainet - Internet cepat 100% Fiber Optic, Unlimited Tanpa FUP.">
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #05000a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           BACKGROUND EFFECT
+        ========================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 350px;
+            height: 350px;
+
+            background: #8a00ff;
+
+            filter: blur(180px);
+            opacity: 0.15;
+
+            top: -100px;
+            left: -100px;
+
+            z-index: -1;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 350px;
+            height: 350px;
+
+            background: #00e5ff;
+
+            filter: blur(180px);
+            opacity: 0.10;
+
+            bottom: -100px;
+            right: -100px;
+
+            z-index: -1;
+        }
+
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+            width: 92%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 22px 0;
+        }
+
+        .brand {
+            font-size: 20px;
+            font-weight: bold;
+
+            color: #ffffff;
+
+            text-shadow:
+                0 0 10px #b000ff;
+        }
+
+        .brand span {
+            color: #d900ff;
+        }
+
+        .nav-button {
+            padding: 9px 18px;
+
+            border: 1px solid #b000ff;
+            border-radius: 30px;
+
+            color: #ffffff;
+
+            font-size: 13px;
+
+            box-shadow:
+                0 0 10px rgba(176, 0, 255, 0.4);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 600px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 50px 0;
+        }
+
+        .hero-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 7px 15px;
+
+            border: 1px solid #8a00cc;
+            border-radius: 30px;
+
+            color: #d900ff;
+
+            font-size: 13px;
+
+            margin-bottom: 20px;
+
+            background: rgba(100, 0, 150, 0.12);
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 8vw, 72px);
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #d900ff;
+
+            text-shadow:
+                0 0 10px #d900ff,
+                0 0 30px #8a00ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #bdbdbd;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           HERO BUTTON
+        ========================= */
+
+        .hero-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 30px;
+
+            flex-wrap: wrap;
+        }
+
+        .button-primary {
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            background: #b000ff;
+
+            color: #ffffff;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 0 15px #b000ff;
+
+            transition: 0.3s;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 0 25px #d900ff,
+                0 0 45px #8a00ff;
+        }
+
+        .button-secondary {
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            border: 1px solid #6b008f;
+
+            color: #ffffff;
+
+            transition: 0.3s;
+        }
+
+        .button-secondary:hover {
+            border-color: #d900ff;
+            color: #d900ff;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #999999;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           PACKAGE
+        ========================= */
+
+        .packages {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .package {
+            position: relative;
+
+            padding: 30px 25px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #16001f,
+                    #08000d
+                );
+
+            border: 1px solid #3d0052;
+
+            border-radius: 22px;
+
+            transition: 0.3s;
+        }
+
+        .package:hover {
+            transform: translateY(-8px);
+
+            border-color: #b000ff;
+
+            box-shadow:
+                0 0 20px rgba(176, 0, 255, 0.4);
+        }
+
+        .package.popular {
+            border-color: #d900ff;
+
+            box-shadow:
+                0 0 20px rgba(217, 0, 255, 0.25);
+        }
+
+        .popular-label {
+            position: absolute;
+
+            top: -13px;
+            right: 20px;
+
+            padding: 5px 13px;
+
+            background: #d900ff;
+
+            border-radius: 20px;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 0 15px #d900ff;
+        }
+
+        .package h3 {
+            font-size: 21px;
+
+            color: #ffffff;
+
+            margin-bottom: 15px;
+        }
+
+        .speed {
+            font-size: 38px;
+
+            font-weight: bold;
+
+            color: #d900ff;
+
+            text-shadow:
+                0 0 12px #8a00ff;
+        }
+
+        .speed small {
+            font-size: 15px;
+
+            color: #999999;
+        }
+
+        .price {
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin: 15px 0;
+
+            color: #00e5ff;
+        }
+
+        .package ul {
+            list-style: none;
+
+            margin-top: 20px;
+        }
+
+        .package li {
+            padding: 8px 0;
+
+            color: #cfcfcf;
+
+            font-size: 14px;
+        }
+
+        .package li::before {
+            content: "✓ ";
+
+            color: #00e5ff;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 25px 18px;
+
+            text-align: center;
+
+            background: #0e0017;
+
+            border: 1px solid #300043;
+
+            border-radius: 18px;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+
+            margin-bottom: 7px;
+        }
+
+        .feature p {
+            font-size: 12px;
+
+            color: #999999;
+        }
+
+
+        /* =========================
+           STEPS
+        ========================= */
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .step {
+            text-align: center;
+
+            padding: 25px;
+        }
+
+        .number {
+            width: 50px;
+            height: 50px;
+
+            margin: auto auto 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #b000ff;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 0 15px #b000ff;
+        }
+
+        .step h3 {
+            margin-bottom: 7px;
+        }
+
+        .step p {
+            font-size: 13px;
+
+            color: #999999;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            text-align: center;
+
+            padding: 55px 25px;
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #250038,
+                    #100018
+                );
+
+            border: 1px solid #7000a0;
+
+            box-shadow:
+                0 0 30px rgba(176, 0, 255, 0.2);
+        }
+
+        .cta h2 {
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            color: #aaaaaa;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+
+            padding: 35px 0;
+
+            color: #777777;
+
+            font-size: 12px;
+        }
+
+        footer strong {
+            color: #d900ff;
+        }
+
+
+        /* =========================
+           RESPONSIVE HP
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .packages {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 90%;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <div class="brand">
+                CYBERTECH <span>AINET</span>
+            </div>
+
+            <a
+                href="https://wa.me/6281399213902"
+                class="nav-button"
+                target="_blank">
+
+                Hubungi Admin
+
+            </a>
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    #Internetdaritetangga
+                </div>
+
+                <h1>
+                    Internet Cepat
+                    <br>
+                    <span>Tanpa Batas.</span>
+                </h1>
+
+                <p>
+                    Nikmati koneksi internet 100% Fiber Optic
+                    dengan layanan Unlimited Tanpa FUP
+                    untuk kebutuhan rumah dan keluarga.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#paket"
+                        class="button-primary">
+
+                        Lihat Paket
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/6281399213902?text=Halo%20Cybertech%20Ainet,%20saya%20ingin%20berlangganan%20internet."
+                        class="button-secondary"
+                        target="_blank">
+
+                        💬 WhatsApp Admin
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAKET
+    ========================= -->
+
+    <section
+        class="section"
+        id="paket">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Pilih Paket Internet
+                </h2>
+
+                <p>
+                    Sesuaikan dengan kebutuhan internet rumah kamu.
+                </p>
+
+            </div>
+
+
+            <div class="packages">
+
+
+                <!-- PAKET 8 -->
+
+                <div class="package">
+
+                    <h3>
+                        UPTO 8 Mbps
+                    </h3>
+
+                    <div class="speed">
+                        8 <small>Mbps</small>
+                    </div>
+
+                    <div class="price">
+                        Rp130.000 / bulan
+                    </div>
+
+                    <ul>
+                        <li>100% Fiber Optic</li>
+                        <li>Unlimited Tanpa FUP</li>
+                        <li>Router/Modem dipinjamkan</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- PAKET 10 -->
+
+                <div class="package popular">
+
+                    <div class="popular-label">
+                        POPULER
+                    </div>
+
+                    <h3>
+                        UPTO 10 Mbps
+                    </h3>
+
+                    <div class="speed">
+                        10 <small>Mbps</small>
+                    </div>
+
+                    <div class="price">
+                        Rp150.000 / bulan
+                    </div>
+
+                    <ul>
+                        <li>100% Fiber Optic</li>
+                        <li>Unlimited Tanpa FUP</li>
+                        <li>Router/Modem dipinjamkan</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- PAKET 15 -->
+
+                <div class="package">
+
+                    <h3>
+                        15 Mbps
+                    </h3>
+
+                    <div class="speed">
+                        15 <small>Mbps</small>
+                    </div>
+
+                    <div class="price">
+                        Rp200.000 / bulan
+                    </div>
+
+                    <ul>
+                        <li>100% Fiber Optic</li>
+                        <li>Unlimited Tanpa FUP</li>
+                        <li>Router/Modem dipinjamkan</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KEUNGGULAN
+    ========================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Kenapa Cybertech Ainet?
+                </h2>
+
+                <p>
+                    Layanan internet yang simpel dan transparan.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🚀
+                    </div>
+
+                    <h3>
+                        100% Fiber Optic
+                    </h3>
+
+                    <p>
+                        Koneksi menggunakan jaringan fiber optic.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ♾️
+                    </div>
+
+                    <h3>
+                        Unlimited
+                    </h3>
+
+                    <p>
+                        Unlimited tanpa FUP.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        📡
+                    </div>
+
+                    <h3>
+                        Router Gratis Pinjam
+                    </h3>
+
+                    <p>
+                        Router/modem dipinjamkan selama berlangganan.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Kabel Gratis
+                    </h3>
+
+                    <p>
+                        Bebas biaya kabel maksimal 200 meter.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CARA BERLANGGANAN
+    ========================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Cara Berlangganan
+                </h2>
+
+                <p>
+                    Mudah dan cepat.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="number">
+                        1
+                    </div>
+
+                    <h3>
+                        Pilih Paket
+                    </h3>
+
+                    <p>
+                        Pilih paket internet yang sesuai kebutuhan.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        2
+                    </div>
+
+                    <h3>
+                        Hubungi Admin
+                    </h3>
+
+                    <p>
+                        Hubungi admin melalui WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        3
+                    </div>
+
+                    <h3>
+                        Pemasangan
+                    </h3>
+
+                    <p>
+                        Tim melakukan proses pemasangan jaringan.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="cta">
+
+                <h2>
+                    Siap Terhubung?
+                </h2>
+
+                <p>
+                    Hubungi Cybertech Ainet untuk informasi
+                    pemasangan dan ketersediaan area.
+                </p>
+
+                <a
+                    href="https://wa.me/6281399213902?text=Halo%20Cybertech%20Ainet,%20saya%20ingin%20berlangganan%20internet."
+                    class="button-primary"
+                    target="_blank">
+
+                    💬 HUBUNGI ADMIN WHATSAPP
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <strong>
+                AINET
+            </strong>
+
+            <br>
+
+            #Internetdaritetangga
+
+            <br><br>
+
+            © 2026 Cybertech Ainet
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
